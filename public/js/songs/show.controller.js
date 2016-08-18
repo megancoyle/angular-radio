@@ -7,10 +7,12 @@
     "$stateParams",
     "$firebaseObject",
     "$state",
+    "$scope",
     SongShowControllerFunction
   ]);
 
-  function SongShowControllerFunction($stateParams, $firebaseObject, $state) {
+  function SongShowControllerFunction($stateParams, $firebaseObject, $state, $scope) {
+    $scope.editSong = false;
     var vm = this;
     var ref = firebase.database().ref().child("songs/" + $stateParams.id);
     $firebaseObject(ref).$loaded().then(function(song){

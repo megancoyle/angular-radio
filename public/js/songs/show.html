@@ -6,14 +6,16 @@
   <img data-ng-src="{{SongShowViewModel.song.photoUrl}}">
   <p>{{SongShowViewModel.song.songUrl}}</p>
 
-  <h2>Edit Song</h2>
+  <a href="#" ng-click="editSong = !editSong">Edit Song</a>
 
-  <form data-ng-submit="SongShowViewModel.update()">
-    <input placeholder="Title" data-ng-model="SongShowViewModel.song.title">
-    <input placeholder="Artist" data-ng-model="SongShowViewModel.song.artist">
-    <input placeholder="Song URL" data-ng-model="SongShowViewModel.song.songUrl">
-    <input placeholder="Photo URL" data-ng-model="SongShowViewModel.song.photoUrl">
-    <input placeholder="Genre" data-ng-model="SongShowViewModel.song.genre">
-    <button type="submit">Update Song</button>
-  </form>
+  <div class="edit-song" ng-show="editSong">
+    <form data-ng-submit="SongShowViewModel.update()">
+      <input placeholder="Title" data-ng-model="SongShowViewModel.song.title">
+      <input placeholder="Artist" data-ng-model="SongShowViewModel.song.artist">
+      <input placeholder="Song URL" data-ng-model="SongShowViewModel.song.songUrl">
+      <input placeholder="Photo URL" data-ng-model="SongShowViewModel.song.photoUrl">
+      <input placeholder="Genre" data-ng-model="SongShowViewModel.song.genre">
+      <button type="submit">Update Song</button>
+    </form>
+  </div>
 </div>
