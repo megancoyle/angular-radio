@@ -5,10 +5,12 @@
   .module("songs")
   .controller("SongIndexController", [
     "$firebaseArray",
+    "$scope",
     SongIndexControllerFunction
   ]);
 
-  function SongIndexControllerFunction($firebaseArray){
+  function SongIndexControllerFunction($firebaseArray, $scope){
+    $scope.addSong = false;
     var vm = this;
     var ref = firebase.database().ref().child("songs");
     vm.songs = $firebaseArray(ref);

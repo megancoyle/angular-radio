@@ -1,19 +1,23 @@
 <div class="content">
   <h2>Whatcha wanna listen to?</h2>
 
+  <a href="#" ng-click="addSong = !addSong">+ New Song</a>
+
+  <div class="add-song" ng-show="addSong">
+    <form data-ng-submit="SongIndexViewModel.create()">
+      <input placeholder="Title" data-ng-model="SongIndexViewModel.newSong.title">
+      <input placeholder="Artist" data-ng-model="SongIndexViewModel.newSong.artist">
+      <input placeholder="Song URL" data-ng-model="SongIndexViewModel.newSong.songURL">
+      <input placeholder="Photo URL" data-ng-model="SongIndexViewModel.newSong.photoUrl">
+      <input placeholder="Genre" data-ng-model="SongIndexViewModel.newSong.genre">
+      <button type="submit">Create Song</button>
+    </form>
+  </div>
+
   <div data-ng-repeat="song in SongIndexViewModel.songs">
     <a data-ui-sref="songShow({id: song.$id})">{{song.title}}</a>
     <a data-ui-sref="songShow({id: song.$id})"><img data-ng-src="{{song.photoUrl}}"></a>
     <button data-ng-click="SongIndexViewModel.delete(song)">Delete Song</button>
   </div>
-  <h2>Create Song</h2>
 
-  <form data-ng-submit="SongIndexViewModel.create()">
-    <input placeholder="Title" data-ng-model="SongIndexViewModel.newSong.title">
-    <input placeholder="Artist" data-ng-model="SongIndexViewModel.newSong.artist">
-    <input placeholder="Song URL" data-ng-model="SongIndexViewModel.newSong.songURL">
-    <input placeholder="Photo URL" data-ng-model="SongIndexViewModel.newSong.photoUrl">
-    <input placeholder="Genre" data-ng-model="SongIndexViewModel.newSong.genre">
-    <button type="submit">Create Song</button>
-  </form>
 </div>
