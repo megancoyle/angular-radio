@@ -1,7 +1,7 @@
 <div class="content">
   <h2>Whatcha wanna listen to?</h2>
 
-  <a href="#" ng-click="addSong = !addSong">+ New Song</a>
+  <a href="#" ng-click="addSong = !addSong" class="new-song">+ New Song</a>
 
   <div class="add-song" ng-show="addSong">
     <form data-ng-submit="SongIndexViewModel.create()">
@@ -14,7 +14,7 @@
     </form>
   </div>
 
-  <div data-ng-repeat="song in SongIndexViewModel.songs">
+  <div data-ng-repeat="song in SongIndexViewModel.songs" class="song">
     <a data-ui-sref="songShow({id: song.$id})">{{song.title}}</a>
     <a data-ui-sref="songShow({id: song.$id})"><img data-ng-src="{{song.photoUrl}}"></a>
     <button data-ng-click="SongIndexViewModel.delete(song)">Delete Song</button>

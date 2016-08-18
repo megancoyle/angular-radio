@@ -72,37 +72,14 @@ nav a {
     line-height: 1.3;
 }
 
-/* Controls */
-#filter-row{
-
+/* Song pag */
+.song.ng-scope {
+    display: inline-block;
+    width: 280px;
+    vertical-align: top;
+    margin: 10px;
 }
-
-#toggle-filter{
-  background-color: #3685B0;
-  padding: 12px;
-  border-radius: 3px;
-  margin-top:-2px;
-  border: 1px solid #fff;
-}
-#toggle-filter:hover,
-#toggle-filter:active{
-  cursor:pointer;
-  background-color:#111;
-
-}
-
-#toggle-filter i{
-  color:#fff;
-}
-
-.hiddenDiv{
-  margin:20px 0px;
-  background-color:#cacaca;
-  max-width:200px;
-  height:100px;
-  padding:20px;
-  border-radius:3px;
-  font-weight:900;
-  line-height:60px;
-  transition: display 0.5s ease-in-out;
+.new-song {
+  padding-bottom: 20px;
+  display: block;
 }
