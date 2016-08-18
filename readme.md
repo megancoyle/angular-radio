@@ -1,7 +1,9 @@
 # WDI Radio
 Lab project for General Assembly, "WDI Radio." The app is built in Angular JS and uses Firebase for the database.
 
-![Screenshot](wdi-radio.png)
+[![Screenshot](wdi-radio.png)](https://radio-3c9b8.firebaseapp.com/)
+
+[View the Deployed App](https://radio-3c9b8.firebaseapp.com/)
 
 ## User Stories
 
