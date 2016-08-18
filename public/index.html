@@ -23,20 +23,18 @@
     <script src="js/songs/songs.js"></script>
     <script src="js/songs/index.controller.js"></script>
     <script src="js/songs/show.controller.js"></script>
+    <base href="http://localhost:8080/" />
   </head>
   <body>
     <header>
       <div class="container">
-        <h1 id="logo"><a href="/">WDI Radio</a></h1>
+        <h1 id="logo"><a data-ui-sref="homeIndex">WDI Radio</a></h1>
         <nav>
           <a data-ui-sref="songIndex">Songs</a>
         </nav>
       </div>
     </header>
     <main class="container" data-ui-view>
-      <div class="welcome">
-        <h1>Welcome to a Place Where You Can Start Rockin'</h1>
-      </div>
     </main>
   </body>
 </html>

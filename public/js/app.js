@@ -8,11 +8,17 @@
   ])
   .config([
     "$stateProvider",
+    "$locationProvider",
     RouterFunction
   ]);
 
-  function RouterFunction($stateProvider){
+  function RouterFunction($stateProvider, $locationProvider){
+    $locationProvider.html5Mode(true)
     $stateProvider
+    .state("homeIndex", {
+      url: "/",
+      templateUrl: "js/songs/welcome.html",
+    })
     .state("songIndex", {
       url: "/songs",
       templateUrl: "js/songs/index.html",

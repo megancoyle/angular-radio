@@ -1,11 +1,10 @@
 <div class="content">
-  <h2>Song</h2>
+  <h2>{{SongShowViewModel.song.title}}</h2>
 
-  <p>{{SongShowViewModel.song.title}}</p>
-  <p>BY: {{SongShowViewModel.song.artist}}</p>
+  <p>{{SongShowViewModel.song.artist}}<br>
+  {{SongShowViewModel.song.genre}}</p>
   <img data-ng-src="{{SongShowViewModel.song.photoUrl}}">
   <p>{{SongShowViewModel.song.songUrl}}</p>
-  <p>{{SongShowViewModel.song.genre}}</p>
 
   <h2>Edit Song</h2>
 
