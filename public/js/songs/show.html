@@ -1,10 +1,13 @@
 <div class="content">
   <h2>{{SongShowViewModel.song.title}}</h2>
 
-  <p>{{SongShowViewModel.song.artist}}<br>
-  {{SongShowViewModel.song.genre}}</p>
+  <p>Artist: {{SongShowViewModel.song.artist}}<br>
+  Genre: {{SongShowViewModel.song.genre}}</p>
   <img data-ng-src="{{SongShowViewModel.song.photoUrl}}">
-  <p>{{SongShowViewModel.song.songUrl}}</p>
+  <audio controls autoplay>
+    <source data-ng-src="{{SongShowViewModel.song.encodedUrl}}" type="audio/mpeg">
+  Your browser does not support the audio tag.
+  </audio>
 
   <a href="#" ng-click="editSong = !editSong">Edit Song</a>
 

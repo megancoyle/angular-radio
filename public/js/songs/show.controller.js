@@ -8,10 +8,11 @@
     "$firebaseObject",
     "$state",
     "$scope",
+    "$sce",
     SongShowControllerFunction
   ]);
 
-  function SongShowControllerFunction($stateParams, $firebaseObject, $state, $scope) {
+  function SongShowControllerFunction($stateParams, $firebaseObject, $state, $scope, $sce) {
     $scope.editSong = false;
     var vm = this;
     var ref = firebase.database().ref().child("songs/" + $stateParams.id);
@@ -23,6 +24,10 @@
         $state.go("songIndex");
       })
     }
+    vm.play = function(song){
+       vm.playSong = song;
+       vm.playSong.encodedUrl = $sce.trustAsResourceUrl(song.songUrl);
+     }
   }
 
 }());
