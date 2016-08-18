@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Can't Buy Me Love",
+    "artist": "The Beatles",
+    "songUrl": "http://www.wdidc.org/wdi-radio-lab-assets/mp3/The%20Beatles%20-%20Can%27t%20Buy%20Me%20Love.mp3",
+    "photoUrl": "http://www.wdidc.org/wdi-radio-lab-assets/img/cant_buy_me_love.jpeg",
+    "genre": "Rock"
+  },
+  {
+    "title": "Hang Loose",
+    "artist": "Alabama Shakes",
+    "songUrl": "http://www.wdidc.org/wdi-radio-lab-assets/mp3/Alabama%20Shakes%20-%20Hang%20Loose.mp3",
+    "photoUrl": "http://www.wdidc.org/wdi-radio-lab-assets/img/hang_loose_alabama_shakes.jpeg",
+    "genre": "Rock"
+  },
+  {
+    "title": "Wildfire",
+    "artist": "sbtrkt",
+    "songUrl": "http://www.wdidc.org/wdi-radio-lab-assets/mp3/SBTRKT%20-%20Wildfire.mp3",
+    "photoUrl": "http://www.wdidc.org/wdi-radio-lab-assets/img/wildfire_sbtrkt.jpeg",
+    "genre": "Electric"
+  }
+]
