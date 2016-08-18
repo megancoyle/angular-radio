@@ -1,0 +1,54 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url("/images/concert.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+}
+ /*Header and Nav */
+header {
+  background: black;
+}
+h1#logo {
+  margin: 0;
+  display: inline-block;
+  padding: 10px 0;
+  text-transform: lowercase;
+}
+#logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+nav {
+  float: right;
+  padding-top: 20px;
+  text-transform: lowercase;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.content {
+    background: rgba(255,255,255,0.6);
+    padding: 40px;
+    margin-top: 30px;
+}
