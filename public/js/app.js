@@ -13,7 +13,7 @@
   ]);
 
   function RouterFunction($stateProvider, $locationProvider){
-    $locationProvider.html5Mode(true)
+    $locationProvider.html5Mode(true);
     $stateProvider
     .state("homeIndex", {
       url: "/",

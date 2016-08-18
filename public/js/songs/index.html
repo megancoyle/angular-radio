@@ -14,10 +14,12 @@
     </form>
   </div>
 
-  <div data-ng-repeat="song in SongIndexViewModel.songs" class="song">
-    <a data-ui-sref="songShow({id: song.$id})">{{song.title}}</a>
-    <a data-ui-sref="songShow({id: song.$id})"><img data-ng-src="{{song.photoUrl}}"></a>
-    <button data-ng-click="SongIndexViewModel.delete(song)">Delete Song</button>
+  <div class="song-listing">
+    <div data-ng-repeat="song in SongIndexViewModel.songs" class="song">
+      <a data-ui-sref="songShow({id: song.$id})">{{song.title}}</a>
+      <a data-ui-sref="songShow({id: song.$id})"><img data-ng-src="{{song.photoUrl}}"></a>
+      <button data-ng-click="SongIndexViewModel.delete(song)">Delete Song</button>
+    </div>
   </div>
 
 </div>

@@ -65,19 +65,27 @@ nav a {
 }
 
 .welcome h1 {
-    font-size: 3em;
-    max-width: 540px;
-    margin: auto;
-    margin-top: 15%;
-    line-height: 1.3;
+  font-size: 3em;
+  max-width: 540px;
+  margin: auto;
+  margin-top: 15%;
+  line-height: 1.3;
 }
 
 /* Song pag */
 .song.ng-scope {
-    display: inline-block;
-    width: 280px;
-    vertical-align: top;
-    margin: 10px;
+  display: inline-block;
+  max-width: 380px;
+  vertical-align: top;
+  padding: 10px;
+  margin: auto;
+}
+.song-listing {
+  text-align: center;
+}
+.song.ng-scope img {
+  max-width: 380px;
+  width: 100%;
 }
 .new-song {
   padding-bottom: 20px;
